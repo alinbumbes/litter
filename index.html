@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lit playground</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="my-element.js"></script>
+
 </head>
 
 <body>
@@ -16,8 +16,33 @@
 
     <p>this page is live</p>
 
-    <my-element></my-element>
+    <learn-lit count="9"></learn-lit>
 
+
+    <script type="module">
+        import { LitElement, html } from 'https://cdn.skypack.dev/pin/lit@v2.6.1-K6QXBHtIjxScqQTndDSY/mode=imports/optimized/lit.js'
+         console.log(
+            "ce plm caut eu aici"
+         )
+        class LearnLit extends LitElement {
+            static properties = {
+                count: {}
+            }
+
+            constructor() {
+                super();
+                this.count = 0;
+            }
+
+            render() {
+                return html`ce plm teste asta coae ?    
+                            <button>click me</button>`;
+            }
+        }
+        customElements.define('learn-lit' , LearnLit);
+
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "litter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinbumbes/litter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinbumbes/litter/issues"
+  },
+  "homepage": "https://github.com/alinbumbes/litter#readme",
+  "dependencies": {
+    "lit": "^2.6.1"
+  }
+}
